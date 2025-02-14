@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "poppins";
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color: #000000;
+    --second-bg-color: #101010;
+    --text-color: #FFFFFF;
+    --main-color: #086947;
+
+}
+html{
+    overflow-x: hidden;
+    font-size: 60%;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+
+}
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 4rem 15%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+#menu-icon{
+    font-size: 3.5rem;
+    color: var(--main-color);
+    display: none;
+}
+.logo{
+    font-size: 3.5rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+span{
+    background: linear-gradient(270deg, #086947 10%, #848cc2
+    );
+    background-clip: text;
+   color: transparent;
+   font-weight: 800;
+
+}
+.navbar a{
+color: var(--text-color);
+margin-left: 4rem;
+font-weight: 600;
+transition: 0.3s ease-in-out;
+border-bottom: 3px solid transparent;
+font-size: 1.8rem;
+}
+.navbar a:hover{
+    border-bottom: 3px solid var(--main-color);
+    color: var(--main-color);
+    transform: scale(2.1);
+}
+.btn{
+    font-weight: 1.8rem;
+    padding: 1rem 2rem;
+    color: var(--text-color);
+    background-color:#848cc2 ;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    border: none;
+    border-radius: 2rem;
+}
+.btn:hover{
+background-color: #086947;
+transform: scaleX(1.1);
+
+}
+section {
+    padding: 18rem 15%;
+    min-height: 100vh;
+}
+.home{
+    display: flex;
+align-items: center;
+justify-content: center;
+gap: 15rem;
+}
+.home-main{
+    /* display: flex; */
+    
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+
+}
+.home-main h1{
+    font-size: 7rem;
+    font-weight: 800;
+    margin-top: 1.5rem;
+    
+    line-height: 1;
+}
+.home-main h3{
+    font-size: 4rem;
+    margin: 1rem 0;
+    /* text-align: right; */
+
+
+}
+.home-main p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+}
+ .image img{
+    border-radius: 50%;
+    width: 32vw;
+    box-shadow: 0 0 15px #848cc2;
+    transition: 0.4s ease-in-out;
+    
+    
+}
+.image img:hover{
+    box-shadow: 0 0 30px #086947 ;
+    cursor: pointer;
+    transform: scale(1.1);}
+    .home .image{
+        border-radius: 50%;
+    }
+     /* section .education{
+padding: 8rem 5%;
+background-color:#101010; */
+    
+    .eduh1{
+        font-size: 3.5rem;
+        font-weight: 800;
+        margin-top: 1.5rem;
+        /* transition: 0.4s ease-in-out; */
+         /* transform: scalex(1);  */
+        
+    }
+    .eduh1:hover{
+        /* transform: scalex(1); */
+        cursor: pointer;
+        transition: 0.3s ease-out;
+        transform: scaleX(1.1);
+        /* transition: 0.4s ease-in-out; */
+        /* background: linear-gradient (270deg, #086947 10%, #848cc2); */
+        background: linear-gradient(270deg, #086947 10%, #848cc2
+        );
+        background-clip: text;
+       color: transparent;
+        
+
+    }
+    .matric{
+        box-sizing: border-box;
+        border-radius: 50%;
+        border: 2px solid #086947;
+        /* margin: 23px 42px; */
+        padding: 45px;
+        text-align: left;
+        font-size: 2rem;
+        margin: 5% 15% 5% 15%;
+        box-shadow: 0 0 10px  #848cc2;
+        transition: 0.4s ease-in-out;
+
+    }
+    .matric:hover{
+        box-shadow: 0 0 20px #086947 ;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        transform: scale(1.1);
+        border: 2px solid #848cc2;
+    }
+ 
+    .inter{
+        box-sizing: border-box;
+        border-radius: 50%;
+        border: 2px solid #086947;
+        box-shadow: 0 0 10px  #848cc2;
+        margin: 23px 42px;
+        padding: 45px;
+        text-align: right;
+        font-size: 2rem;
+        margin: 5% 15% 5% 15%;
+    }
+    .inter:hover{
+        box-shadow: 0 0 20px #086947 ;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        transform: scale(1.1);
+        border: 2px solid #848cc2;
+    }
+    .uni{
+        box-sizing: border-box;
+        border-radius: 50%;
+        border: 2px solid #086947;
+        margin: 23px 42px;
+        padding: 45px;
+        text-align: left;
+        font-size: 2rem;
+        margin: 5% 15% 5% 15%;
+        box-shadow: 0 0 10px  #848cc2;
+    }
+    .uni:hover{
+        box-shadow: 0 0 20px #086947 ;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        transform: scale(1.1);
+        border: 2px solid #848cc2;
+    }
